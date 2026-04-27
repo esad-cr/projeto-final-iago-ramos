@@ -83,13 +83,13 @@ iframe, video {
 /***************** VARIABLES CSS ******************/
 :root {
   --header-height: 3.5rem;
-  --black-color: hsl(219, 25%, 11%);
+  --black-color: hsl(0, 0%, 0%)
   --black-color-light: hsl(90, 26%, 21%);
   --black-color-lighten: hsl(59, 100%, 40%);
-  --white-color: #dbd6d6;
+  --white-color: #ebebca;
   --body-color: hsl(90, 26%, 21%);
   --primary-color: rgb(255, 150, 13);
-  --secondary-color: rgb(79, 106, 96);
+  --secondary-color: rgb(79, 106, 98);
   
 
   --font-regular: 400;
@@ -131,7 +131,7 @@ ul {
 
 a {
   text-decoration: none;
-  color: #233d4d;
+  color: rgb(79, 106, 98);
 }
 
 a:hover, a:active, a.active {
@@ -257,6 +257,7 @@ h3{
   height: 32px;
 }
 
+
 .nav__burger, 
 .nav__close {
   position: absolute;
@@ -264,7 +265,7 @@ h3{
   height: max-content;
   inset: 0;
   margin: auto;
-  font-size: 1.25rem;
+  font-size: 2 rem;
   cursor: pointer;
   transition: opacity .1s, transform .4s;
 }
@@ -273,3 +274,41 @@ h3{
 opacity: 0;
 
 }
+
+@media screen and (max-width:992px) {
+    .nav_menu {
+        position: absolute;
+        left: 0;
+        top: 3.5rem;
+        width: 100%;
+        height: calc(100vh - 3.5rem);
+        overflow: auto;
+        pointer-events: none;
+        opacity: 0;
+        transition: top .4s, opacity .3s;
+    }
+    .nav_menu: ::-webkit-scrollbar {
+        width: 0;
+    }
+    .nav_list {
+        background-color: var(--white-color);
+        padding-top: 1rem;
+    }
+}
+
+.nav_link {
+    color:var(--secondary-color);
+    background-color: var(--white-color);
+    font-weight: var(--font-semi-bold);
+    padding: 1.25rem 1.5rem;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    transitions: color .3s;
+
+}
+
+.nav_link:hover {
+    color:var(--white-color);
+}
+  /*nao aparece o bg */

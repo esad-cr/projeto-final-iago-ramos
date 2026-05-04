@@ -137,6 +137,22 @@ a {
 a:hover, a:active, a.active {
   color: var(--primary-color);  
 }
+
+.space-S{
+  height: 30px;
+}
+.space-M{
+  height: 60px;
+}
+
+.space-L{
+  height: 90px;
+}
+
+.space-XL{
+  height: 120px;
+}
+
 /************************************
 ******** largura dos elemento *******
 ******** que compoem o body *********
@@ -358,4 +374,17 @@ opacity: 0;
 }
 
 
+}
+
+
+/*MAIN CONTENT*/
+
+#mainContent {
+  margin-top:var(--header-height)!important;
+}
+
+@media screen and (min-width: 992px) {
+  #mainContent {
+    margin-top: calc(var(--header-height)+2rem)
+  }
 }

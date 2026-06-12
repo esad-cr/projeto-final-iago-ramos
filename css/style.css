@@ -83,13 +83,14 @@ iframe, video {
 /***************** VARIABLES CSS ******************/
 :root {
   --header-height: 3.5rem;
-  --black-color: hsl(0, 0%, 0%)
-  --black-color-light: hsl(90, 26%, 21%);
-  --black-color-lighten: hsl(59, 100%, 40%);
-  --white-color: #ebebca;
-  --body-color: hsl(90, 26%, 21%);
-  --primary-color: rgb(255, 150, 13);
-  --secondary-color: rgb(79, 106, 98);
+  --black-color: hsl(20, 5%, 8%);          
+  --black-color-light: hsl(20, 5%, 12%);   
+  --black-color-lighten: hsl(20, 5%, 25%); 
+  --white-color: hsl(75, 50%, 97%);
+  --body-color: hsl(75, 100%, 86%);
+  --primary-color: hsl(20, 62%, 52%);
+  --secondary-color: hsl(123, 32%, 25%);
+  --third-color:hsl(61, 28%, 64%);
   
 
   --font-regular: 400;
@@ -104,13 +105,13 @@ iframe, video {
 
 body{
   font-size: 16px;
-  font-family: "Fira Sans", sans-serif;
-  background-color: var(--white-color);
+  font-family: Zalando Sans SemiExpanded , sans-serif;
+  background-color: var(--third-color);
   
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: lato, sans-serif;
+  font-family: Stack Sans Notch , sans-serif;
 }
 
 p {
@@ -133,7 +134,7 @@ ul {
 
 a {
   text-decoration: none;
-  color: rgb(79, 106, 98);
+  color: var(--primary-color);
 }
 
 a:hover, a:active, a.active {
@@ -229,8 +230,8 @@ h3{
   left: 0;
   width: 100%;
   max-width: 100%;
-  background-color: var(--white-color);
-  box-shadow: 0 2px 16px hsla(220, 32%, 8%, .3);
+  background-color: var(--transparent);
+  box-shadow: 0;
   z-index: var(--z-fixed);
 }
 
@@ -315,8 +316,8 @@ opacity: 0;
 }
 
 .nav__link {
-    color:var(--secondary-color);
-    background-color: var(--white-color);
+    color:var(--black-color);
+    background-color: var(--primary);
     font-weight: var(--font-semi-bold);
     padding: 1.25rem 1.5rem;
     display:flex;

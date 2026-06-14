@@ -226,7 +226,7 @@ h3{
 
 #topHeader {
   position: fixed;
-  top: 1.7rem;
+  top: .95rem;
   left: 0;
   width: 100%;
   max-width: 100%;
@@ -392,10 +392,30 @@ opacity: 0;
 }
 
 
+  h1 {
+    font-size: 7.993rem;
+    margin-top: 3.3rem;
+  }
+
+  h2 {
+    font-size: 5.653rem;
+    margin-top: -1.8rem;
+    margin-bottom: 1.8rem;
+  }
+
+  h3 {
+    font-size: 3.998rem;
+    margin-bottom: 7rem;
+    margin-bottom: 7rem;
+    letter-spacing: 1.4rem;
+  }
+
 /*MAIN CONTENT*/
 
 #mainContent {
-  margin-top:var(--header-height)!important;
+    margin-top:var(--header-height)!important;
+    position: relative;
+    z-index: 0;
 }
 
 @media screen and (min-width: 992px) {
@@ -405,7 +425,32 @@ opacity: 0;
 }
 
 .bg_malha {
-  background-size: 30px 30px;
+    background-attachment: fixed;
+    background-size: 30px 30px;
+    background-attachment: fixed;
     background-position: center;
     background-image: linear-gradient(to right, var(--body-color) 1px, transparent 1px), linear-gradient(to bottom, var(--body-color) 1px, transparent 1px);
+}
+
+
+.hero {
+  display: flex;
+  padding-left: 8.4rem;
+  padding-right: 8.4rem;
+}
+
+.hero__text {
+  width: 50%;
+}
+
+.hero__image {
+  width: 50%;
+}
+
+
+  #mainFooter {
+    position: fixed;
+    bottom: 1rem;
+    left: 0;
+   padding-left: 8.4rem;
 }

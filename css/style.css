@@ -599,6 +599,7 @@ p {
   
 }
 
+
 .back-content h2 {
   font-size: 3rem;
   line-height: 1.2;
@@ -709,4 +710,13 @@ p {
   100% {
     transform: translateY(0px);
   }
+}
+
+/*PROCESSING*/
+#p5Canvas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem;
+  gap: 0.5rem;
 }
